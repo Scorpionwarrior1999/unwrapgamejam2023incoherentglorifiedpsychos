@@ -1,3 +1,4 @@
+using RayFire;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,14 +29,16 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
         {
             _currentDragItem =  Instantiate(_smallBomb);
         }
-        if (_type == BomType.Medium)
+        else if (_type == BomType.Medium)
         {
             _currentDragItem = Instantiate(_mediumBomb);
         }
-        if (_type == BomType.Big)
+        else if (_type == BomType.Big)
         {
             _currentDragItem = Instantiate(_bigBomb);
         }
+
+        ExplosionManager.instance.AddBombToList(_currentDragItem.GetComponent<RayfireBomb>());
     }
 
     public void OnDrag(PointerEventData eventData)

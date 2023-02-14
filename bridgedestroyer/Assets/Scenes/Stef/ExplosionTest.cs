@@ -6,7 +6,8 @@ using RayFire;
 public class ExplosionTest : MonoBehaviour
 {
     [SerializeField] RayfireBomb bomb;
-    [SerializeField] RayfireRigid cube;
+    [SerializeField] RayfireRigid objectToExplode;
+    RayfireBomb[] bombList;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +23,10 @@ public class ExplosionTest : MonoBehaviour
 
     public void ExplosionButton()
     {
-        Debug.Log("Boom");
-        cube.physics.useGravity = true;
-        bomb.Explode(0);
-        cube.Demolish();
+        if (objectToExplode != null && bomb != null)
+        {
+            Debug.Log("Boom");
+            bomb.Explode(0);
+        }
     }
 }
