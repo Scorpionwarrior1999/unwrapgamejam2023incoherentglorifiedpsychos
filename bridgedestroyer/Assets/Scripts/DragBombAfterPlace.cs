@@ -6,27 +6,16 @@ using UnityEngine.EventSystems;
 public class DragBombAfterPlace : MonoBehaviour
 {
     private GameObject _currentDragItem;
-
-    //public void OnBeginDrag(PointerEventData eventData)
-    //{
-    //    _currentDragItem = this.gameObject;
-    //    Debug.Log(this.gameObject);
-    //}
-
-    //public void OnDrag(PointerEventData eventData)
-    //{
-    //    Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10);
-    //    _currentDragItem.transform.position = Camera.main.ScreenToWorldPoint(pos);
-    //}
-
-    //public void OnEndDrag(PointerEventData eventData)
-    //{
-    //    _currentDragItem = null;
-    //}
+    private bool _previousMouse = false;
+    [SerializeField]
+    private LayerMask _hingeLayer;
+    private Vector3 _originalPos;
+    
     private void Update()
     {
         if (Input.GetMouseButton(0))
         {
+            _previousMouse = true;
             if (_currentDragItem == null)
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -35,6 +24,7 @@ public class DragBombAfterPlace : MonoBehaviour
                 if (Physics.Raycast(ray, out hit))
                 {
                     _currentDragItem = hit.transform.parent.gameObject;
+                    _originalPos = _currentDragItem.transform.position;
                 }
             }
             else
@@ -45,6 +35,22 @@ public class DragBombAfterPlace : MonoBehaviour
         }
         else
         {
+            if(_previousMouse == true && !Input.GetMouseButton(0))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity, _hingeLayer))
+                {
+                    _currentDragItem.transform.position = hit.point;
+                }
+                else
+                {
+                    _currentDragItem.transform.position = _originalPos;
+                    _currentDragItem = null;
+                }
+            }
             _currentDragItem = null;
         }
 

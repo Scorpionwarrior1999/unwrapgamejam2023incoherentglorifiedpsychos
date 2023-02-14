@@ -25,6 +25,11 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     [SerializeField]
     private Moneyhandler moneyHandler;
 
+    [SerializeField]
+    private LayerMask _hingeLayer;
+
+
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (moneyHandler.money > 0)
@@ -42,7 +47,7 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
             }
             else if (_type == BomType.Medium)
             {
-                
+
                 moneyHandler.dynamiteCost = moneyHandler.midCost;
                 if ((moneyHandler.money - moneyHandler.dynamiteCost) >= 0)
                 {
@@ -58,7 +63,7 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
                     _currentDragItem = Instantiate(_bigBomb);
                     moneyHandler.dynamitePlaced = true;
                 }
-                    
+
             }
 
             ExplosionManager.instance.AddBombToList(_currentDragItem.GetComponent<RayfireBomb>());
@@ -68,12 +73,44 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     public void OnDrag(PointerEventData eventData)
     {
         Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10);
-        _currentDragItem.transform.position = Camera.main.ScreenToWorldPoint(pos) ;
+        _currentDragItem.transform.position = Camera.main.ScreenToWorldPoint(pos);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        _currentDragItem = null;
-    }
 
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, _hingeLayer))
+        {
+            _currentDragItem.transform.position = hit.point;
+        }
+        else
+        {
+            if (_type == BomType.Small)
+            {
+                moneyHandler.dynamiteCost = moneyHandler.smallCost;
+                moneyHandler.dynamiteRemoved = true;
+            }
+            else if (_type == BomType.Medium)
+            {
+                moneyHandler.dynamiteCost = moneyHandler.midCost;
+                moneyHandler.dynamiteRemoved = true;
+            }
+            else if (_type == BomType.Big)
+            {
+                moneyHandler.dynamiteCost = moneyHandler.bigCost;
+                moneyHandler.dynamiteRemoved = true;
+            }
+
+            Destroy(_currentDragItem);
+            _currentDragItem = null;
+        }
+
+    }
 }
+
+

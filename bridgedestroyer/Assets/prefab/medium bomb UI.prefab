@@ -93,3 +93,7 @@ MonoBehaviour:
   _bigBomb: {fileID: 8633003144239007180, guid: 5ccfe70a145f4944d947c9c66e7cbe00, type: 3}
   _mediumBomb: {fileID: 8633003144239007180, guid: 6f26010d91bdf2f4a820d68f85611ff1, type: 3}
   _smallBomb: {fileID: 8633003144239007180, guid: 9c671ed05485fd544b08620c856d99fb, type: 3}
+  moneyHandler: {fileID: 0}
+  _hingeLayer:
+    serializedVersion: 2
+    m_Bits: 64
