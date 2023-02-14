@@ -43,6 +43,10 @@ public class DragBombAfterPlace : MonoBehaviour
                 _currentDragItem.transform.position = Camera.main.ScreenToWorldPoint(pos);
             }
         }
-        
+        else
+        {
+            _currentDragItem = null;
+        }
+
     }
 }
