@@ -7,8 +7,6 @@ public class ExplosionManager : MonoBehaviour
 {
     public static ExplosionManager instance { get; private set; }
 
-    [SerializeField] RayfireBomb bomb;
-
     List<RayfireBomb> bombs = new List<RayfireBomb>();
 
     private void Awake()
@@ -29,9 +27,12 @@ public class ExplosionManager : MonoBehaviour
         {
             foreach (var bomb in bombs)
             {
-                Debug.Log("Boom");
-                bomb.Explode(0);
-                Destroy(bomb.gameObject);
+                if (bomb != null)
+                {
+                    Debug.Log("Boom");
+                    bomb.Explode(0);
+                    Destroy(bomb.gameObject);
+                }
             }
         }
 

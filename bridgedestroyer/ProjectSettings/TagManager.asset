@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hinge
+  - SmallBomb
+  - MediumBomb
+  - BigBomb
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5949229219649289832}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: SmallBomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 3389405697164493929}
   m_Layer: 0
   m_Name: BombSmall
-  m_TagString: Untagged
+  m_TagString: SmallBomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

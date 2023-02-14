@@ -550,6 +550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1685078429}
   - component: {fileID: 1685078430}
+  - component: {fileID: 1685078431}
   m_Layer: 0
   m_Name: ExplosionManager
   m_TagString: Untagged
@@ -584,7 +585,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf0bd0d943460b489643a8824ed58f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 0}
+--- !u!114 &1685078431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685078427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b530255e6be37741ad763579e407f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyHandler: {fileID: 2064060263}
 --- !u!1 &1733478325
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,3 +923,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e575938d1b4b6764aa4b9eceb44640d9, type: 3}
+--- !u!114 &2064060263 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6359908210817938687, guid: e575938d1b4b6764aa4b9eceb44640d9, type: 3}
+  m_PrefabInstance: {fileID: 1968775626}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf5e921b9678ae47b37f65d54421e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
