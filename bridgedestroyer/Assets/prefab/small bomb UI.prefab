@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1776321269171869005}
   - component: {fileID: 106177387356986739}
   - component: {fileID: 2583553533147337078}
+  - component: {fileID: 5214592256594009963}
   m_Layer: 5
-  m_Name: small bomb
+  m_Name: small bomb UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,3 +77,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5214592256594009963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6456291317586701914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca5c12016d3b0941a1541a331eb830f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _type: 0
+  _bigBomb: {fileID: 8633003144239007180, guid: 5ccfe70a145f4944d947c9c66e7cbe00, type: 3}
+  _mediumBomb: {fileID: 8633003144239007180, guid: 6f26010d91bdf2f4a820d68f85611ff1, type: 3}
+  _smallBomb: {fileID: 8633003144239007180, guid: 9c671ed05485fd544b08620c856d99fb, type: 3}

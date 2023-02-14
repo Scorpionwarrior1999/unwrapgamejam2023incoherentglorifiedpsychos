@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7424063303472563436}
   - component: {fileID: 5367686239061368832}
   - component: {fileID: 6296433713991713303}
+  - component: {fileID: 5744574883637349230}
   m_Layer: 5
-  m_Name: big bomb
+  m_Name: big bomb UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,3 +77,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5744574883637349230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7265510750407990483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca5c12016d3b0941a1541a331eb830f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _type: 1
+  _bigBomb: {fileID: 8633003144239007180, guid: 5ccfe70a145f4944d947c9c66e7cbe00, type: 3}
+  _mediumBomb: {fileID: 8633003144239007180, guid: 6f26010d91bdf2f4a820d68f85611ff1, type: 3}
+  _smallBomb: {fileID: 8633003144239007180, guid: 9c671ed05485fd544b08620c856d99fb, type: 3}
