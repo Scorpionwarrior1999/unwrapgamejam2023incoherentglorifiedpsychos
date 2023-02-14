@@ -22,23 +22,47 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
 
     private GameObject _currentDragItem;
 
+    [SerializeField]
+    private Moneyhandler moneyHandler;
+
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (moneyHandler.money > 0)
+        {
 
-        if(_type == BomType.Small)
-        {
-            _currentDragItem =  Instantiate(_smallBomb);
-        }
-        else if (_type == BomType.Medium)
-        {
-            _currentDragItem = Instantiate(_mediumBomb);
-        }
-        else if (_type == BomType.Big)
-        {
-            _currentDragItem = Instantiate(_bigBomb);
-        }
 
-        ExplosionManager.instance.AddBombToList(_currentDragItem.GetComponent<RayfireBomb>());
+            if (_type == BomType.Small)
+            {
+                moneyHandler.dynamiteCost = moneyHandler.smallCost;
+                if ((moneyHandler.money - moneyHandler.dynamiteCost) >= 0)
+                {
+                    _currentDragItem = Instantiate(_smallBomb);
+                    moneyHandler.dynamitePlaced = true;
+                }
+            }
+            else if (_type == BomType.Medium)
+            {
+                
+                moneyHandler.dynamiteCost = moneyHandler.midCost;
+                if ((moneyHandler.money - moneyHandler.dynamiteCost) >= 0)
+                {
+                    _currentDragItem = Instantiate(_mediumBomb);
+                    moneyHandler.dynamitePlaced = true;
+                }
+            }
+            else if (_type == BomType.Big)
+            {
+                moneyHandler.dynamiteCost = moneyHandler.bigCost;
+                if ((moneyHandler.money - moneyHandler.dynamiteCost) >= 0)
+                {
+                    _currentDragItem = Instantiate(_bigBomb);
+                    moneyHandler.dynamitePlaced = true;
+                }
+                    
+            }
+
+            ExplosionManager.instance.AddBombToList(_currentDragItem.GetComponent<RayfireBomb>());
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -49,7 +73,7 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
-
+        _currentDragItem = null;
     }
 
 }

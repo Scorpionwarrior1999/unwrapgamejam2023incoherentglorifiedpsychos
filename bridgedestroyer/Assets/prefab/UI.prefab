@@ -199,6 +199,58 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &3370196139224926678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3697272584945418372}
+  - component: {fileID: 6359908210817938687}
+  m_Layer: 0
+  m_Name: moneyHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3697272584945418372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370196139224926678}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 440.2, y: 195.40547, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6056132494287758574}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6359908210817938687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370196139224926678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf5e921b9678ae47b37f65d54421e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 500
+  dynamiteCost: 0
+  dynamitePlaced: 0
+  dynamiteRemoved: 0
+  moneyText: {fileID: 7340942467608443624}
+  smallCost: 20
+  midCost: 50
+  bigCost: 100
 --- !u!1 &3603363661674195150
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +607,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5980024452549883470}
+  - {fileID: 3697272584945418372}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -811,6 +864,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5214592256594009963, guid: edf982c9c3621c84d87dd61be5c1cbcc, type: 3}
+      propertyPath: moneyHandler
+      value: 
+      objectReference: {fileID: 6359908210817938687}
     - target: {fileID: 6456291317586701914, guid: edf982c9c3621c84d87dd61be5c1cbcc, type: 3}
       propertyPath: m_Name
       value: small bomb
@@ -833,6 +890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'medium bomb '
       objectReference: {fileID: 0}
+    - target: {fileID: 4410033681339935569, guid: 6beb477fa4af93d4fa7f2aa12911ceed, type: 3}
+      propertyPath: moneyHandler
+      value: 
+      objectReference: {fileID: 6359908210817938687}
     - target: {fileID: 4415623692980647612, guid: 6beb477fa4af93d4fa7f2aa12911ceed, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -931,6 +992,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6539330720715460265}
     m_Modifications:
+    - target: {fileID: 5744574883637349230, guid: 874345e6814d0e6459112cfbc70078bd, type: 3}
+      propertyPath: moneyHandler
+      value: 
+      objectReference: {fileID: 6359908210817938687}
     - target: {fileID: 7265510750407990483, guid: 874345e6814d0e6459112cfbc70078bd, type: 3}
       propertyPath: m_Name
       value: big bomb
