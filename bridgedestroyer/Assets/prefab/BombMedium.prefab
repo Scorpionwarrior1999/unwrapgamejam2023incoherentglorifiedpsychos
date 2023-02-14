@@ -107,6 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7636510896259209896}
   - component: {fileID: 7114320328637184754}
+  - component: {fileID: 9176937998185549263}
   m_Layer: 0
   m_Name: BombMedium
   m_TagString: Untagged
@@ -167,3 +168,15 @@ MonoBehaviour:
   showGizmo: 0
   mask: -1
   tagFilter: Untagged
+--- !u!114 &9176937998185549263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8633003144239007180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c1699f1a6af5a247a9c5aaf9c0cb4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
