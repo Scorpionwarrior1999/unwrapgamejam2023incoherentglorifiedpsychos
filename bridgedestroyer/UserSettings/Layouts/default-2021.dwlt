@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 22
+  controlID: 59
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 23
+  controlID: 60
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 24
+  controlID: 61
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes/Stef
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes/Stef
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Stef\Documents\School\Year 2\Crea\Game jam\unwrapgamejam2023incoherentglorifiedpsychos\bridgedestroyer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 3}
-    m_SelectedIDs: be590000
-    m_LastClickedID: 22974
-    m_ExpandedIDs: 00000000be59000000ca9a3b
+    scrollPos: {x: 0, y: 239}
+    m_SelectedIDs: 525e0000
+    m_LastClickedID: 24146
+    m_ExpandedIDs: 00000000d2580000dc580000de580000ee580000f858000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be590000
+    m_ExpandedIDs: 00000000d2580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -451,7 +451,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 268
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -490,7 +490,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 90faffff
+      m_ExpandedIDs: 9c66ffff1c77ffff5e98ffff4299ffffe69effff98a8ffffaeacffffa2b5ffff74c3ffffe4c4ffff4ecdffffc4d5ffff72d7ffff06e0ffff6cf0fffffcf9ffff36fbffff7a590000a8590000586000008660000076610000a4610000d26100009e630000cc63000018650000466500003a69000068690000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -772,9 +772,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.8476908, y: -1.2537239, z: 0.7698908}
+    m_Target: {x: -0.77244186, y: -3.4610066, z: -0.12042904}
     speed: 2
-    m_Value: {x: 0.8476908, y: -1.2537239, z: 0.7698908}
+    m_Value: {x: -0.77244186, y: -3.4610066, z: -0.12042904}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -821,13 +821,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.24478137, y: -0.350178, z: 0.09533708, w: -0.8990992}
+    m_Target: {x: -0.30503488, y: -0.41490546, z: 0.14995496, w: -0.8439978}
     speed: 2
-    m_Value: {x: -0.24478136, y: -0.350178, z: 0.09533708, w: -0.8990991}
+    m_Value: {x: -0.30503312, y: -0.41490307, z: 0.1499541, w: -0.84399295}
   m_Size:
-    m_Target: 1.7050148
+    m_Target: 10.774182
     speed: 2
-    m_Value: 1.7050148
+    m_Value: 10.774182
   m_Ortho:
     m_Target: 0
     speed: 2
