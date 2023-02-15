@@ -87,6 +87,8 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, _hingeLayer))
         {
             _currentDragItem.transform.position = hit.point;
+            
+            _currentDragItem = null;
         }
         else
         {
@@ -105,7 +107,6 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
                 moneyHandler.dynamiteCost = moneyHandler.bigCost;
                 moneyHandler.dynamiteRemoved = true;
             }
-
             Destroy(_currentDragItem);
             _currentDragItem = null;
         }

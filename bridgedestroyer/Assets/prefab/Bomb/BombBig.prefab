@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7884861305522819340}
   - component: {fileID: 1914448868906816801}
   - component: {fileID: 5580646343250509453}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: BigBomb
   m_Icon: {fileID: 0}
@@ -121,8 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7636510896259209896}
   - component: {fileID: 167122007285476790}
-  - component: {fileID: 4299212824022402499}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BombBig
   m_TagString: BigBomb
   m_Icon: {fileID: 0}
@@ -182,18 +181,3 @@ MonoBehaviour:
   showGizmo: 0
   mask: -1
   tagFilter: Untagged
---- !u!114 &4299212824022402499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8633003144239007180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c1699f1a6af5a247a9c5aaf9c0cb4f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hingeLayer:
-    serializedVersion: 2
-    m_Bits: 64
