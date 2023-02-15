@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Youri.unity
     guid: 5591678964b9aef4ea17f8b22cabcf17
   - enabled: 1
@@ -23,10 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/menus/StartScreen.unity
     guid: 77ad4c7bf2843fb419f61a24cb58f62f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/seedeez.unity
     guid: 370af630939e0d8409d6e52bacf0f622
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stef/Stef.unity
     guid: eb4d8aaec73bc08409b42e31d311c855
   m_configObjects: {}
