@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4532678743669308665}
   - component: {fileID: 3189803224271309020}
   - component: {fileID: 5949229219649289832}
+  - component: {fileID: 1284577085045316532}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: SmallBomb
@@ -98,6 +99,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1284577085045316532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388602454947911559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49514ea98d717a14bbfd7f11e4c3a7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 5949229219649289832}
 --- !u!1 &8633003144239007180
 GameObject:
   m_ObjectHideFlags: 0

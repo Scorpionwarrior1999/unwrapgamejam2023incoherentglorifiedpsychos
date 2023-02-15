@@ -8,6 +8,7 @@ TagManager:
   - SmallBomb
   - MediumBomb
   - BigBomb
+  - WoodStruct
   layers:
   - Default
   - TransparentFX
