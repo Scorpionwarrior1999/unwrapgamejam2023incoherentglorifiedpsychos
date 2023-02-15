@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 3118982288883469492}
   - component: {fileID: 2494339327868753039}
   - component: {fileID: 6885129989365486998}
-  - component: {fileID: 3948440844705000809}
+  - component: {fileID: 3938516642755801056}
   m_Layer: 5
   m_Name: Retry button
   m_TagString: Untagged
@@ -567,8 +567,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3948440844705000809}
-        m_TargetAssemblyTypeName: Restartfunction, Assembly-CSharp
+      - m_Target: {fileID: 3938516642755801056}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: Reload
         m_Mode: 1
         m_Arguments:
@@ -579,7 +579,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3948440844705000809
+--- !u!114 &3938516642755801056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -588,10 +588,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4214201065504832540}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee2556852fb816846b3469c4eb526826, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fcc17a83a202b747b95aaa1e6352b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 
 --- !u!1 &5016041877733276950
 GameObject:
   m_ObjectHideFlags: 0
