@@ -16,10 +16,11 @@ public class DragBombAfterPlace : MonoBehaviour
     private List<DragBomb> _dragBombs = new List<DragBomb>();
 
     private bool CanDrag = false;
+    [SerializeField]
+    private LayerMask _layer;
 
     private void Start()
     {
-
         foreach (GameObject g in GameObject.FindGameObjectsWithTag("BombUI"))
         {
             _dragBombs.Add(g.GetComponent<DragBomb>());
@@ -40,7 +41,7 @@ public class DragBombAfterPlace : MonoBehaviour
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
 
-                    if (Physics.Raycast(ray, out hit))
+                    if (Physics.Raycast(ray, out hit,Mathf.Infinity, _bomlayer))
                     {
                         if (hit.transform.parent != null)
                         {

@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class WinCondition : MonoBehaviour
 {
-
+    [SerializeField]
+    private GameObject _TurnonThisUI;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "train")
         {
-            Debug.Log("you've won");
+            _TurnonThisUI.SetActive(true);
         }
     }
 
