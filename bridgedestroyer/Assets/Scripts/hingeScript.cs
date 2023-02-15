@@ -5,25 +5,18 @@ using UnityEngine;
 public class hingeScript : MonoBehaviour
 {
     private List<HingeJoint> _joints = new List<HingeJoint>();
-    void Start()
-    {
-        _joints.AddRange(gameObject.GetComponents<HingeJoint>());
-    }
+
+
 
 
     void Update()
     {
-        //foreach(HingeJoint j in _joints)
-        //{
-        //    if(j.connectedBody == null)
-        //    {
-        //        _joints.Remove(j);
 
-        //        Destroy(j);
-        //    }
-        //}
+
+        _joints.AddRange(gameObject.GetComponents<HingeJoint>());
         for (int i = _joints.Count - 1; i > -1; i--)
         {
+
             if (_joints[i].connectedBody == null)
             {
                 HingeJoint p = _joints[i];
@@ -32,6 +25,9 @@ public class hingeScript : MonoBehaviour
                 p = null;
             }
         }
+        _joints.Clear();
+
+
 
     }
 }

@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7636510896259209896}
   - component: {fileID: 167122007285476790}
+  - component: {fileID: 8641009335542505976}
   m_Layer: 7
   m_Name: BombBig
   m_TagString: BigBomb
@@ -182,6 +183,23 @@ MonoBehaviour:
   showGizmo: 0
   mask: -1
   tagFilter: Untagged
+--- !u!114 &8641009335542505976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8633003144239007180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c001d5f24fcea40b6c6e5a83519f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Activate: 0
+  _hinges:
+    serializedVersion: 2
+    m_Bits: 64
+  _bombType: 1
 --- !u!1001 &3464007878348829460
 PrefabInstance:
   m_ObjectHideFlags: 0

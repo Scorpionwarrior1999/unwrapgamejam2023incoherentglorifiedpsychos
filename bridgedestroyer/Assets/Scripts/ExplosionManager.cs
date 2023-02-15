@@ -9,6 +9,8 @@ public class ExplosionManager : MonoBehaviour
 
     List<RayfireBomb> bombs = new List<RayfireBomb>();
 
+    private List<Bomb> _bombes = new List<Bomb>();
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -25,15 +27,22 @@ public class ExplosionManager : MonoBehaviour
     {
         if (bombs.Count > 0)
         {
-            foreach (var bomb in bombs)
+            _bombes.AddRange(FindObjectsOfType<Bomb>());
+            foreach(Bomb b in _bombes)
             {
-                if (bomb != null)
-                {
-                    Debug.Log("Boom");
-                    bomb.Explode(0);
-                    Destroy(bomb.gameObject);
-                }
+                b.Activate = true;
             }
+
+
+            //foreach (var bomb in bombs)
+            //{
+            //    if (bomb != null)
+            //    {
+            //        Debug.Log("Boom");
+            //        bomb.Explode(0);
+            //        Destroy(bomb.gameObject);
+            //    }
+            //}
         }
 
         bombs.Clear();

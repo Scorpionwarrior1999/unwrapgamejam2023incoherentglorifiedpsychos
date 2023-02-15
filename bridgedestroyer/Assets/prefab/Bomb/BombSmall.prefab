@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7636510896259209896}
   - component: {fileID: 3162434502115755531}
+  - component: {fileID: -2865189093061903297}
   m_Layer: 7
   m_Name: BombSmall
   m_TagString: SmallBomb
@@ -183,6 +184,23 @@ MonoBehaviour:
   showGizmo: 0
   mask: -1
   tagFilter: Untagged
+--- !u!114 &-2865189093061903297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8633003144239007180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c001d5f24fcea40b6c6e5a83519f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Activate: 0
+  _hinges:
+    serializedVersion: 2
+    m_Bits: 64
+  _bombType: 0
 --- !u!1001 &5676254661827807686
 PrefabInstance:
   m_ObjectHideFlags: 0
