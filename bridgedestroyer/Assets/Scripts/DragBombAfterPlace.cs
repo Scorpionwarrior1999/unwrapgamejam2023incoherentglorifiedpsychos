@@ -42,9 +42,11 @@ public class DragBombAfterPlace : MonoBehaviour
 
                     if (Physics.Raycast(ray, out hit))
                     {
-
-                        _currentDragItem = hit.transform.parent.gameObject;
-                        _originalPos = _currentDragItem.transform.position;
+                        if (hit.transform.parent != null)
+                        {
+                            _currentDragItem = hit.transform.parent.gameObject;
+                            _originalPos = _currentDragItem.transform.position;
+                        }
 
                     }
                 }
