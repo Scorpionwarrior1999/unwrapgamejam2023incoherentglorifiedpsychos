@@ -12,6 +12,6 @@ public class WheelMovement : MonoBehaviour
     void Update()
     {
         _angle += Time.deltaTime * _rotationSpeed;
-        transform.rotation = Quaternion.Euler(new Vector3(_angle, 0, 0));
+        transform.localRotation = Quaternion.Euler(new Vector3(_angle, 0, 0));
     }
 }
