@@ -160,7 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rangeType: 0
   fadeType: 0
-  range: 5
+  range: 2.5
   strength: 2
   variation: 50
   chaos: 30
@@ -170,7 +170,7 @@ MonoBehaviour:
   delay: 0
   destroy: 0
   applyDamage: 1
-  damageValue: 100
+  damageValue: 25
   play: 0
   volume: 1
   clip: {fileID: 0}
