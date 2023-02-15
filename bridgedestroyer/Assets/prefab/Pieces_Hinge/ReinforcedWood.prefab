@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BridgeSectionWoodReinforced
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16f5a248f414b464a80118b0d9e3bea8, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16f5a248f414b464a80118b0d9e3bea8, type: 3}
 --- !u!1 &619117386163232012 stripped
@@ -93,6 +97,10 @@ PrefabInstance:
     - target: {fileID: 63007451031762216, guid: fa324278b7589e04f9dade6dc04bf278, type: 3}
       propertyPath: m_Name
       value: ReinforcedWood
+      objectReference: {fileID: 0}
+    - target: {fileID: 63007451031762216, guid: fa324278b7589e04f9dade6dc04bf278, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4281591086850416953, guid: fa324278b7589e04f9dade6dc04bf278, type: 3}
       propertyPath: m_RootOrder
@@ -137,6 +145,10 @@ PrefabInstance:
     - target: {fileID: 4281591086850416953, guid: fa324278b7589e04f9dade6dc04bf278, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542502876856429016, guid: fa324278b7589e04f9dade6dc04bf278, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5542502876856429016, guid: fa324278b7589e04f9dade6dc04bf278, type: 3}
       propertyPath: m_IsActive
