@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5744574883637349230}
   m_Layer: 5
   m_Name: big bomb UI
-  m_TagString: Untagged
+  m_TagString: BombUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,3 +97,4 @@ MonoBehaviour:
   _hingeLayer:
     serializedVersion: 2
     m_Bits: 64
+  IsDragging: 0

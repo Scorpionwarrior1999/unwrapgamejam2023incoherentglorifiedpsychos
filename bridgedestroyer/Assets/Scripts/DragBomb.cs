@@ -28,10 +28,12 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     [SerializeField]
     private LayerMask _hingeLayer;
 
-
+    public bool IsDragging = false;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        IsDragging = true;
+        
         if (moneyHandler.money > 0)
         {
 
@@ -110,6 +112,8 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
             Destroy(_currentDragItem);
             _currentDragItem = null;
         }
+        IsDragging = false;
+        
 
     }
 }

@@ -13,11 +13,23 @@ public class DragBombAfterPlace : MonoBehaviour
     private LayerMask _bomlayer;
     private Vector3 _originalPos;
 
-    public bool HasbeenDropped = true;
+    private List<DragBomb> _dragBombs = new List<DragBomb>();
 
+    private bool CanDrag = false;
+
+    private void Start()
+    {
+
+        foreach (GameObject g in GameObject.FindGameObjectsWithTag("BombUI"))
+        {
+            _dragBombs.Add(g.GetComponent<DragBomb>());
+        }
+    }
     private void Update()
     {
-        if (HasbeenDropped)
+       
+
+        if (CanDrag)
         {
             if (Input.GetMouseButton(0))
             {
@@ -30,10 +42,10 @@ public class DragBombAfterPlace : MonoBehaviour
 
                     if (Physics.Raycast(ray, out hit))
                     {
-                        
-                            _currentDragItem = hit.transform.parent.gameObject;
-                            _originalPos = _currentDragItem.transform.position;
-                        
+
+                        _currentDragItem = hit.transform.parent.gameObject;
+                        _originalPos = _currentDragItem.transform.position;
+
                     }
                 }
 
@@ -67,6 +79,20 @@ public class DragBombAfterPlace : MonoBehaviour
                 _currentDragItem = null;
             }
         }
+
+        foreach (DragBomb d in _dragBombs)
+        {
+            if (d.IsDragging)
+            {
+                CanDrag = false;
+                break;
+            }
+            else
+            {
+                CanDrag = true;
+            }
+        }
+
 
     }
 }
