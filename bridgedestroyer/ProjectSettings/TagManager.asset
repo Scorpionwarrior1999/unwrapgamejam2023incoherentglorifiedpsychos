@@ -10,6 +10,7 @@ TagManager:
   - BigBomb
   - WoodStruct
   - BombUI
+  - train
   layers:
   - Default
   - TransparentFX
