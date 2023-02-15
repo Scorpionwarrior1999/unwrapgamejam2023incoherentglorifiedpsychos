@@ -13,12 +13,21 @@ public class Moneyhandler : MonoBehaviour
     private Text moneyText;
 
     public int smallCost;
+    [SerializeField]
+    private Text smallText;
     public int midCost;
+    [SerializeField]
+    private Text midText;
     public int bigCost;
+    [SerializeField]
+    private Text bigText;
 
     private void Start()
     {
         dynamitePlaced = false;
+        smallText.text = smallCost.ToString();
+        midText.text = midCost.ToString();
+        bigText.text = bigCost.ToString();
     }
 
     private void Update()
