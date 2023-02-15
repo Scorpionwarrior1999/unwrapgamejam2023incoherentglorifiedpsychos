@@ -257,6 +257,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1fa36d55c0f34794c898a05be8c665d3, type: 3}
+      propertyPath: m_TagString
+      value: BigBomb
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fa36d55c0f34794c898a05be8c665d3, type: 3}
 --- !u!4 &4005980123233752319 stripped
@@ -280,19 +284,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4004256439353594393, guid: 1fa36d55c0f34794c898a05be8c665d3, type: 3}
---- !u!114 &4247184786430835405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4383067993386503749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49514ea98d717a14bbfd7f11e4c3a7e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collider: {fileID: 5684008312786520876}
