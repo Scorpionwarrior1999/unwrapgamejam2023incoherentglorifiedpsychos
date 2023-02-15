@@ -74,8 +74,11 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10);
-        _currentDragItem.transform.position = Camera.main.ScreenToWorldPoint(pos);
+        if (_currentDragItem != null)
+        {
+            Vector3 pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10);
+            _currentDragItem.transform.position = Camera.main.ScreenToWorldPoint(pos);
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)

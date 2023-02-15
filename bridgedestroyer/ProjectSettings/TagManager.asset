@@ -9,6 +9,7 @@ TagManager:
   - MediumBomb
   - BigBomb
   - WoodStruct
+  - BombUI
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Bomb
   - WoodStruct
   - PostProcessing
-  - 
+  - Env
   - 
   - 
   - 
