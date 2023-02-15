@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2987993080569479506}
   m_Layer: 0
   m_Name: BigWheel_Middle
-  m_TagString: Untagged
+  m_TagString: train
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 6141793761770835995}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: train
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 805590476002228868}
   m_Layer: 0
   m_Name: BigWheel_Back
-  m_TagString: Untagged
+  m_TagString: train
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 7903335359166251844}
   m_Layer: 0
   m_Name: SmallWheel_Front
-  m_TagString: Untagged
+  m_TagString: train
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 3022581265053365214}
   m_Layer: 0
   m_Name: SmallWheel_Middle
-  m_TagString: Untagged
+  m_TagString: train
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 3185544951075184964}
   m_Layer: 0
   m_Name: Piston
-  m_TagString: Untagged
+  m_TagString: train
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
