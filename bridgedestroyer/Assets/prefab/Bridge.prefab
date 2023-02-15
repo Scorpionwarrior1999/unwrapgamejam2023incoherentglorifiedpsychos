@@ -52,7 +52,7 @@ GameObject:
   - component: {fileID: 6842323384652828441}
   - component: {fileID: 6842323384652828438}
   - component: {fileID: 2209928239722310693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: WoodStruct
   m_Icon: {fileID: 0}
@@ -170,9 +170,9 @@ MonoBehaviour:
   objectType: 0
   demolitionType: 1
   physics:
-    materialType: 4
+    materialType: 9
     material: {fileID: 0}
-    massBy: 0
+    massBy: 2
     mass: 0.1
     colliderType: 0
     useGravity: 1
@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 6842323384906987329}
   - component: {fileID: 6842323384906987358}
   - component: {fileID: 7311020393936751343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: WoodStruct
   m_Icon: {fileID: 0}
@@ -452,9 +452,9 @@ MonoBehaviour:
   objectType: 0
   demolitionType: 1
   physics:
-    materialType: 4
+    materialType: 9
     material: {fileID: 0}
-    massBy: 0
+    massBy: 2
     mass: 0.1
     colliderType: 0
     useGravity: 1
@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 6842323385655280330}
   - component: {fileID: 6842323385655280331}
   - component: {fileID: 2720534531879474177}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: WoodStruct
   m_Icon: {fileID: 0}
@@ -734,9 +734,9 @@ MonoBehaviour:
   objectType: 0
   demolitionType: 1
   physics:
-    materialType: 4
+    materialType: 9
     material: {fileID: 0}
-    massBy: 0
+    massBy: 2
     mass: 0.1
     colliderType: 0
     useGravity: 1
@@ -898,7 +898,7 @@ GameObject:
   - component: {fileID: 6842323385780483298}
   - component: {fileID: 6842323385780483299}
   - component: {fileID: 6599047251892176108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: WoodStruct
   m_Icon: {fileID: 0}
@@ -1016,9 +1016,9 @@ MonoBehaviour:
   objectType: 0
   demolitionType: 1
   physics:
-    materialType: 4
+    materialType: 9
     material: {fileID: 0}
-    massBy: 0
+    massBy: 2
     mass: 0.1
     colliderType: 0
     useGravity: 1
@@ -1265,9 +1265,9 @@ MonoBehaviour:
   objectType: 0
   demolitionType: 1
   physics:
-    materialType: 4
+    materialType: 1
     material: {fileID: 0}
-    massBy: 0
+    massBy: 2
     mass: 0.1
     colliderType: 0
     useGravity: 1
@@ -1519,9 +1519,9 @@ MonoBehaviour:
   objectType: 0
   demolitionType: 1
   physics:
-    materialType: 4
+    materialType: 1
     material: {fileID: 0}
-    massBy: 0
+    massBy: 2
     mass: 0.1
     colliderType: 0
     useGravity: 1
@@ -1785,9 +1785,9 @@ MonoBehaviour:
   objectType: 0
   demolitionType: 1
   physics:
-    materialType: 4
+    materialType: 1
     material: {fileID: 0}
-    massBy: 0
+    massBy: 2
     mass: 0.1
     colliderType: 0
     useGravity: 1
