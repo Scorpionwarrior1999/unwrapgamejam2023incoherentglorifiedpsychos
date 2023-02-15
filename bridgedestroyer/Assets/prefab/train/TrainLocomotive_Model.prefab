@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4105169240572983220}
   - component: {fileID: 535439882586307124}
   - component: {fileID: 5254630469790697707}
+  - component: {fileID: 1939346860}
   m_Layer: 0
   m_Name: BigWheel_Middle
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1939346860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152061111123860347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0418e214f76b944b809f4959c38330c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationSpeed: 140
 --- !u!1 &1880452287517683887
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +203,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2164040709203143062}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.015176773, y: 0, z: -3.2230704}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -214,6 +228,7 @@ GameObject:
   - component: {fileID: 2398337894518730853}
   - component: {fileID: 1882330591195010226}
   - component: {fileID: 3380780702052302466}
+  - component: {fileID: 1358969498}
   m_Layer: 0
   m_Name: BigWheel_Back
   m_TagString: Untagged
@@ -286,6 +301,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1358969498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2804322974784793979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0418e214f76b944b809f4959c38330c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationSpeed: 140
 --- !u!1 &4291944654274372270
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +325,7 @@ GameObject:
   - component: {fileID: 3782264394686478904}
   - component: {fileID: 2880667557922438359}
   - component: {fileID: 6855103224877455045}
+  - component: {fileID: 618715996}
   m_Layer: 0
   m_Name: SmallWheel_Front
   m_TagString: Untagged
@@ -369,6 +398,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &618715996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291944654274372270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0418e214f76b944b809f4959c38330c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationSpeed: 180
 --- !u!1 &5557043103772751248
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,6 +422,7 @@ GameObject:
   - component: {fileID: 2134911995302936485}
   - component: {fileID: 8972135732150870160}
   - component: {fileID: 5486061293860617750}
+  - component: {fileID: 464371010}
   m_Layer: 0
   m_Name: SmallWheel_Middle
   m_TagString: Untagged
@@ -452,6 +495,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &464371010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5557043103772751248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0418e214f76b944b809f4959c38330c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationSpeed: 180
 --- !u!1 &7718359810674988776
 GameObject:
   m_ObjectHideFlags: 0
