@@ -15,18 +15,21 @@ public class ExplosionFXManager : MonoBehaviour
     public void EmitSmallExplosion(Vector3 spawnPosition)
     {
         _smallExplosion = Instantiate(_smallExplosionPrefab, spawnPosition, Quaternion.identity);
+        _smallExplosion.transform.localScale *= 0.5f;
         _smallExplosion.Play();
     }
 
     public void EmitMiddleExplosion(Vector3 spawnPosition)
     {
         _middleExplosion = Instantiate(_middleExplosionPrefab, spawnPosition, Quaternion.identity);
+        _middleExplosion.transform.localScale *= 0.75f;
         _middleExplosion.Play();
     }
 
     public void EmitBigExplosion(Vector3 spawnPosition)
     {
         _bigExplosion = Instantiate(_bigExplosionPrefab, spawnPosition, Quaternion.identity);
+        _bigExplosion.transform.localScale *= 0.5f;
         _bigExplosion.Play();
     }
 }
