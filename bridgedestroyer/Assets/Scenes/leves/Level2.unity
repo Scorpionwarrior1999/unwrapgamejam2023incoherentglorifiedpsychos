@@ -2932,6 +2932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 744994119}
   - component: {fileID: 744994118}
+  - component: {fileID: 744994120}
   m_Layer: 0
   m_Name: audioPlay
   m_TagString: Untagged
@@ -3050,6 +3051,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &744994120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744994117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba343a02e770295469e2cfcfff551b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 51e381ae6ae4a6141a256c93fe33d576, type: 3}
 --- !u!1 &749511228 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6123132334918332497, guid: d77e81120c801234688e523c91ec0082, type: 3}
