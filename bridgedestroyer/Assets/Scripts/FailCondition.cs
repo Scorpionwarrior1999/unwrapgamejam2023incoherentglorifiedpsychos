@@ -6,7 +6,14 @@ public class FailCondition : MonoBehaviour
 {
 
     public float timeLeft;
+    [SerializeField]
+    private GameObject defeatScreen;
 
+
+    private void Start()
+    {
+        defeatScreen.SetActive(false);
+    }
 
     private void Update()
     {
@@ -15,6 +22,8 @@ public class FailCondition : MonoBehaviour
         if (timeLeft <=0)
         {
             Debug.Log("you've lost, time over");
+            defeatScreen.SetActive(true);
+
         }
     }
 
@@ -23,6 +32,7 @@ public class FailCondition : MonoBehaviour
         if (other.gameObject.tag == "train")
         {
             Debug.Log("you've lost");
+            defeatScreen.SetActive(true);
         }
     }
 }
