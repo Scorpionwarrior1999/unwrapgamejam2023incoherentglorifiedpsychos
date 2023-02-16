@@ -50,4 +50,9 @@ MonoBehaviour:
   _bomlayer:
     serializedVersion: 2
     m_Bits: 128
-  HasbeenDropped: 1
+  _layer:
+    serializedVersion: 2
+    m_Bits: 0
+  _select: {fileID: 2100000, guid: 5859f8f0b24ec1a4297de150091d6742, type: 2}
+  _hinges: []
+  _renders: []

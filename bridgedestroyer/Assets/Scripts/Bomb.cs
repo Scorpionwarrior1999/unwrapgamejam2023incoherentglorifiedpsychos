@@ -48,6 +48,7 @@ public class Bomb : MonoBehaviour
 
     private void DestroyStuff(float range)
     {
+        _explosionSound.volume = 10;
         _explosionSound.Play(0);
 
         Collider[] col = Physics.OverlapSphere(transform.position, range, _hinges);

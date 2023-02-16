@@ -30,10 +30,35 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
 
     public bool IsDragging = false;
 
+    private Material _original;
+    [SerializeField]
+    private Material _select;
+    public List<GameObject> _hinges;
+    public List<MeshRenderer> _renders;
+
+    private void Start()
+    {
+
+        _hinges.AddRange(GameObject.FindGameObjectsWithTag("HingeModel"));
+        foreach(GameObject g in _hinges)
+        {
+            _renders.Add(g.GetComponent<MeshRenderer>());
+
+        }
+        _original = _renders[0].material;
+
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         IsDragging = true;
         
+        foreach(MeshRenderer m in _renders)
+        {
+            m.material = _select;
+        }
+
+
         if (moneyHandler.money > 0)
         {
 
@@ -115,6 +140,12 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
             Destroy(_currentDragItem);
             _currentDragItem = null;
         }
+
+        foreach (MeshRenderer m in _renders)
+        {
+            m.material = _original;
+        }
+
         IsDragging = false;
         
 
