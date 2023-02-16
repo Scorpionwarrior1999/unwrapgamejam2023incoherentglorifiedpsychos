@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3627290746230048876}
   - component: {fileID: 6593069861486456244}
   - component: {fileID: 2895633219413276016}
-  - component: {fileID: 5628502695240310002}
   m_Layer: 0
   m_Name: Body
   m_TagString: train
@@ -84,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5628502695240310002
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239382700728673854}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2959467708922500008, guid: 7d74726117ee99c428cbed8e3879e7e4, type: 3}
 --- !u!1 &523252803549282055
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +94,8 @@ GameObject:
   - component: {fileID: 867267333892629949}
   - component: {fileID: 9087132010589232425}
   - component: {fileID: 8041006024528219233}
+  - component: {fileID: 8415023317768505116}
+  - component: {fileID: 2202404150119094160}
   m_Layer: 0
   m_Name: TrainCart_Full_Model
   m_TagString: train
@@ -125,7 +112,7 @@ Transform:
   m_GameObject: {fileID: 523252803549282055}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -42.2}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4035889042899085044}
@@ -147,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78fb3022a3e7514ebd193879434d7b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trainSpeed: 4
 --- !u!54 &8041006024528219233
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -161,8 +149,35 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 104
   m_CollisionDetection: 0
+--- !u!136 &8415023317768505116
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523252803549282055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.11
+  m_Height: 32.31
+  m_Direction: 2
+  m_Center: {x: 0, y: 3.76, z: 0}
+--- !u!65 &2202404150119094160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523252803549282055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 21.33, y: 13.5, z: 30.63}
+  m_Center: {x: 0, y: 8.15, z: -0.45}
 --- !u!1 &2003325838362122333
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +189,6 @@ GameObject:
   - component: {fileID: 4660093339102635464}
   - component: {fileID: 3033907262084617443}
   - component: {fileID: 6244558231851587541}
-  - component: {fileID: 8138765786639299053}
   m_Layer: 0
   m_Name: Contents
   m_TagString: train
@@ -247,20 +261,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8138765786639299053
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003325838362122333}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6293728319727527885, guid: 7d74726117ee99c428cbed8e3879e7e4, type: 3}
 --- !u!1 &4584722467267951594
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +273,6 @@ GameObject:
   - component: {fileID: 240275842809594403}
   - component: {fileID: 4008258690473994259}
   - component: {fileID: 8160531379120644574}
-  - component: {fileID: 2023138490510572805}
   m_Layer: 0
   m_Name: BigWheel_Back
   m_TagString: train
@@ -359,20 +358,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationSpeed: 140
---- !u!64 &2023138490510572805
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4584722467267951594}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7126081274466841590, guid: 7d74726117ee99c428cbed8e3879e7e4, type: 3}
 --- !u!1 &7371925590634172702
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +370,6 @@ GameObject:
   - component: {fileID: 5867251577049283210}
   - component: {fileID: 1292298035924683043}
   - component: {fileID: 3607505434618653721}
-  - component: {fileID: 7928938565977977724}
   m_Layer: 0
   m_Name: BigWheel_Front
   m_TagString: train
@@ -471,17 +455,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationSpeed: 140
---- !u!64 &7928938565977977724
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7371925590634172702}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7436728275756573148, guid: 7d74726117ee99c428cbed8e3879e7e4, type: 3}
