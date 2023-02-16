@@ -20,8 +20,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/leves/Level3.unity
     guid: 2e30651f0e35c0e41a821c67aff4dcfd
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/leves/Level4.unity
+    guid: e2e774cb67e8fb744811b8d93dda0b76
+  - enabled: 0
+    path: 
     guid: 590a4d3f8c4c63840a9385d940fef364
   - enabled: 0
     path: Assets/Scenes/seedeez.unity
