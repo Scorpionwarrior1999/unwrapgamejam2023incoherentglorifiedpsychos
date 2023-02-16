@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Youri.unity
     guid: 5591678964b9aef4ea17f8b22cabcf17
   - enabled: 1
-    path: Assets/Scenes/leves/Level3.unity
-    guid: 2e30651f0e35c0e41a821c67aff4dcfd
+    path: Assets/Scenes/menus/StartScreen.unity
+    guid: 77ad4c7bf2843fb419f61a24cb58f62f
   - enabled: 1
     path: Assets/Scenes/leves/Level1.unity
     guid: 2158784a4db694048b7c2ae6f2b01fd0
@@ -18,11 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/leves/Level2.unity
     guid: 10a9a9cb3ffaf6849bdfc782fdbfdd5c
   - enabled: 1
+    path: Assets/Scenes/leves/Level3.unity
+    guid: 2e30651f0e35c0e41a821c67aff4dcfd
+  - enabled: 0
     path: Assets/Scenes/leves/Level4.unity
     guid: 590a4d3f8c4c63840a9385d940fef364
-  - enabled: 1
-    path: Assets/Scenes/menus/StartScreen.unity
-    guid: 77ad4c7bf2843fb419f61a24cb58f62f
   - enabled: 0
     path: Assets/Scenes/seedeez.unity
     guid: 370af630939e0d8409d6e52bacf0f622
