@@ -11,10 +11,12 @@ public class Bomb : MonoBehaviour
     private BomType _bombType;
     private bool _hasBoom = false;
     private AudioSource _explosionSound;
+    private ExplosionFXManager _explosionFX;
     private void Awake()
     {
         Activate = false;
         _explosionSound = GetComponent<AudioSource>();
+        _explosionFX = FindObjectOfType<ExplosionFXManager>();
     }
     void Update()
     {
@@ -26,17 +28,19 @@ public class Bomb : MonoBehaviour
                 {
                     DestroyStuff(1);
                     ApplyForceTOStuff(1);
-
+                    _explosionFX.EmitSmallExplosion(transform.position);
                 }
                 else if (_bombType == BomType.Medium)
                 {
                     DestroyStuff(3);
                     ApplyForceTOStuff(3);
+                    _explosionFX.EmitMiddleExplosion(transform.position);
                 }
                 else if (_bombType == BomType.Big)
                 {
                     DestroyStuff(6);
                     ApplyForceTOStuff(6);
+                    _explosionFX.EmitBigExplosion(transform.position);
                 }
             }
         }
