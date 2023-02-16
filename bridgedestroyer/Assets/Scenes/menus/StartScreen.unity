@@ -3127,7 +3127,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainLocomotive_Model
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6293311071231379042, guid: 4189063047f29ba46978efda96653563, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -3477850766830971895, guid: 4189063047f29ba46978efda96653563, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4189063047f29ba46978efda96653563, type: 3}
 --- !u!1 &351125625
 GameObject:
@@ -9719,7 +9724,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9087132010589232425, guid: 3bf6cf993d1c16c4b86ac6b8d447b755, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8041006024528219233, guid: 3bf6cf993d1c16c4b86ac6b8d447b755, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3bf6cf993d1c16c4b86ac6b8d447b755, type: 3}
 --- !u!1001 &1239027731
 PrefabInstance:
@@ -11334,7 +11344,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9087132010589232425, guid: 3bf6cf993d1c16c4b86ac6b8d447b755, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8041006024528219233, guid: 3bf6cf993d1c16c4b86ac6b8d447b755, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3bf6cf993d1c16c4b86ac6b8d447b755, type: 3}
 --- !u!1 &1413013895
 GameObject:
@@ -11907,7 +11922,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9087132010589232425, guid: 3bf6cf993d1c16c4b86ac6b8d447b755, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8041006024528219233, guid: 3bf6cf993d1c16c4b86ac6b8d447b755, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3bf6cf993d1c16c4b86ac6b8d447b755, type: 3}
 --- !u!4 &1482784834 stripped
 Transform:
