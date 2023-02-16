@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 564582738}
   m_Layer: 0
   m_Name: BigWheel_Front
-  m_TagString: train
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 8122978807450275726}
   m_Layer: 0
   m_Name: Body
-  m_TagString: train
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 1712339754}
   m_Layer: 0
   m_Name: BigWheel_Back
-  m_TagString: train
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
