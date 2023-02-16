@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class TrainMovement : MonoBehaviour
 {
+    [SerializeField]
+    private float trainSpeed;
+
     void Update()
     {
-        transform.Translate(-transform.right * 1f * Time.deltaTime);
+        transform.Translate(-transform.right * trainSpeed * Time.deltaTime);
     }
 }
