@@ -15488,14 +15488,14 @@ PrefabInstance:
     - target: {fileID: 6783476982657758471, guid: 95041d1df8f201343bcb77108bffe16d, type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270244136}
     - target: {fileID: 6783476982657758471, guid: 95041d1df8f201343bcb77108bffe16d, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.536763
+      value: 0.5208036
       objectReference: {fileID: 0}
     - target: {fileID: 6783476982657758471, guid: 95041d1df8f201343bcb77108bffe16d, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.41140932
+      value: 0.5094373
       objectReference: {fileID: 0}
     - target: {fileID: 6783476982657758471, guid: 95041d1df8f201343bcb77108bffe16d, type: 3}
       propertyPath: m_ConnectedAnchor.z
