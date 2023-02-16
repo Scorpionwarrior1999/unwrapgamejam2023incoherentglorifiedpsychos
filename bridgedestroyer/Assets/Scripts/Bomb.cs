@@ -10,9 +10,11 @@ public class Bomb : MonoBehaviour
     [SerializeField]
     private BomType _bombType;
     private bool _hasBoom = false;
+    private AudioSource _explosionSound;
     private void Awake()
     {
         Activate = false;
+        _explosionSound = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -42,6 +44,8 @@ public class Bomb : MonoBehaviour
 
     private void DestroyStuff(float range)
     {
+        _explosionSound.Play(0);
+
         Collider[] col = Physics.OverlapSphere(transform.position, range, _hinges);
         for (int i = col.Length - 1; i > -1; i--)
         {
@@ -51,6 +55,7 @@ public class Bomb : MonoBehaviour
                 Destroy(hinges[j]);
             }
         }
+
         Destroy(gameObject);
         _hasBoom = true;
     }
