@@ -92,8 +92,10 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
                 }
 
             }
-
-            ExplosionManager.instance.AddBombToList(_currentDragItem.GetComponent<RayfireBomb>());
+            if (_currentDragItem != null)
+            {
+                ExplosionManager.instance.AddBombToList(_currentDragItem.GetComponent<RayfireBomb>());
+            }
         }
     }
 
@@ -116,9 +118,12 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, _hingeLayer))
         {
-            _currentDragItem.transform.position = hit.point;
-            
-            _currentDragItem = null;
+            if (_currentDragItem != null)
+            {
+                _currentDragItem.transform.position = hit.point;
+
+                _currentDragItem = null;
+            }
         }
         else
         {
