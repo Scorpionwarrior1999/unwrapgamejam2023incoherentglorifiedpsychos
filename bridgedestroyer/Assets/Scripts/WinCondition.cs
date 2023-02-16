@@ -11,6 +11,7 @@ public class WinCondition : MonoBehaviour
         if (other.gameObject.tag == "train")
         {
             _TurnonThisUI.SetActive(true);
+            Destroy(other);
         }
     }
 

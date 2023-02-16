@@ -24,6 +24,7 @@ public class FailCondition : MonoBehaviour
             Debug.Log("you've lost, time over");
             defeatScreen.SetActive(true);
 
+
         }
     }
 
@@ -33,6 +34,7 @@ public class FailCondition : MonoBehaviour
         {
             Debug.Log("you've lost");
             defeatScreen.SetActive(true);
+            Destroy(other);
         }
     }
 }
