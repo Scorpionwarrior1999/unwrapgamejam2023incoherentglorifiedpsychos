@@ -12,11 +12,13 @@ public class Bomb : MonoBehaviour
     private bool _hasBoom = false;
     private AudioSource _explosionSound;
     private ExplosionFXManager _explosionFX;
+    private AudioManager _audioManager;
     private void Awake()
     {
         Activate = false;
         _explosionSound = GetComponent<AudioSource>();
         _explosionFX = FindObjectOfType<ExplosionFXManager>();
+        _audioManager = FindObjectOfType<AudioManager>();
     }
     void Update()
     {
@@ -42,6 +44,8 @@ public class Bomb : MonoBehaviour
                     ApplyForceTOStuff(6);
                     _explosionFX.EmitBigExplosion(transform.position);
                 }
+
+                _audioManager.PlayExplosionSound();
             }
         }
     }
