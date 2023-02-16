@@ -36,11 +36,13 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     public List<GameObject> _hinges;
     public List<MeshRenderer> _renders;
 
+    private bool _canDrag = false;
+
     private void Start()
     {
 
         _hinges.AddRange(GameObject.FindGameObjectsWithTag("HingeModel"));
-        foreach(GameObject g in _hinges)
+        foreach (GameObject g in _hinges)
         {
             _renders.Add(g.GetComponent<MeshRenderer>());
 
@@ -52,11 +54,8 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     public void OnBeginDrag(PointerEventData eventData)
     {
         IsDragging = true;
-        
-        foreach(MeshRenderer m in _renders)
-        {
-            m.material = _select;
-        }
+
+
 
 
         if (moneyHandler.money > 0)
@@ -68,8 +67,18 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
                 moneyHandler.dynamiteCost = moneyHandler.smallCost;
                 if ((moneyHandler.money - moneyHandler.dynamiteCost) >= 0)
                 {
+
+                    _canDrag = true;
                     _currentDragItem = Instantiate(_smallBomb);
                     moneyHandler.dynamitePlaced = true;
+
+                    moneyHandler.dynamiteCost = moneyHandler.smallCost;
+                    moneyHandler.dynamitePlaced = true;
+
+                    foreach (MeshRenderer m in _renders)
+                    {
+                        m.material = _select;
+                    }
                 }
             }
             else if (_type == BomType.Medium)
@@ -78,18 +87,40 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
                 moneyHandler.dynamiteCost = moneyHandler.midCost;
                 if ((moneyHandler.money - moneyHandler.dynamiteCost) >= 0)
                 {
+                    _canDrag = true;
                     _currentDragItem = Instantiate(_mediumBomb);
                     moneyHandler.dynamitePlaced = true;
+
+                    moneyHandler.dynamiteCost = moneyHandler.midCost;
+                    moneyHandler.dynamitePlaced = true;
+
+                    foreach (MeshRenderer m in _renders)
+                    {
+                        m.material = _select;
+                    }
                 }
+
+                
             }
             else if (_type == BomType.Big)
             {
                 moneyHandler.dynamiteCost = moneyHandler.bigCost;
                 if ((moneyHandler.money - moneyHandler.dynamiteCost) >= 0)
                 {
+                    _canDrag = true;
                     _currentDragItem = Instantiate(_bigBomb);
                     moneyHandler.dynamitePlaced = true;
+
+                    moneyHandler.dynamiteCost = moneyHandler.bigCost;
+                    moneyHandler.dynamitePlaced = true;
+
+                    foreach (MeshRenderer m in _renders)
+                    {
+                        m.material = _select;
+                    }
                 }
+
+                
 
             }
             if (_currentDragItem != null)
@@ -110,49 +141,52 @@ public class DragBomb : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
-
-
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, _hingeLayer))
+        if (_canDrag)
         {
-            if (_currentDragItem != null)
-            {
-                _currentDragItem.transform.position = hit.point;
 
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, _hingeLayer))
+            {
+                if (_currentDragItem != null)
+                {
+                    _currentDragItem.transform.position = hit.point;
+
+                    _currentDragItem = null;
+                }
+            }
+            else
+            {
+                if (_type == BomType.Small)
+                {
+                    moneyHandler.dynamiteCost = moneyHandler.smallCost;
+                    moneyHandler.dynamiteRemoved = true;
+                }
+                else if (_type == BomType.Medium)
+                {
+                    moneyHandler.dynamiteCost = moneyHandler.midCost;
+                    moneyHandler.dynamiteRemoved = true;
+                }
+                else if (_type == BomType.Big)
+                {
+                    moneyHandler.dynamiteCost = moneyHandler.bigCost;
+                    moneyHandler.dynamiteRemoved = true;
+                }
+                Destroy(_currentDragItem);
                 _currentDragItem = null;
             }
-        }
-        else
-        {
-            if (_type == BomType.Small)
-            {
-                moneyHandler.dynamiteCost = moneyHandler.smallCost;
-                moneyHandler.dynamiteRemoved = true;
-            }
-            else if (_type == BomType.Medium)
-            {
-                moneyHandler.dynamiteCost = moneyHandler.midCost;
-                moneyHandler.dynamiteRemoved = true;
-            }
-            else if (_type == BomType.Big)
-            {
-                moneyHandler.dynamiteCost = moneyHandler.bigCost;
-                moneyHandler.dynamiteRemoved = true;
-            }
-            Destroy(_currentDragItem);
-            _currentDragItem = null;
-        }
 
-        foreach (MeshRenderer m in _renders)
-        {
-            m.material = _original;
+            foreach (MeshRenderer m in _renders)
+            {
+                m.material = _original;
+            }
+            _canDrag = false;
         }
 
         IsDragging = false;
-        
+
 
     }
 }
