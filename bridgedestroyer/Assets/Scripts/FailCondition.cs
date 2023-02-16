@@ -8,6 +8,8 @@ public class FailCondition : MonoBehaviour
     public float timeLeft;
     [SerializeField]
     private GameObject defeatScreen;
+    [SerializeField]
+    private GameObject _winScreen;
 
 
     private void Start()
@@ -17,13 +19,16 @@ public class FailCondition : MonoBehaviour
 
     private void Update()
     {
-        timeLeft -= Time.deltaTime;
-
-        if (timeLeft <=0)
+        if (!_winScreen.active)
         {
-            Debug.Log("you've lost, time over");
-            defeatScreen.SetActive(true);
+            timeLeft -= Time.deltaTime;
 
+            if (timeLeft <= 0)
+            {
+                Debug.Log("you've lost, time over");
+                defeatScreen.SetActive(true);
+
+            }
         }
     }
 

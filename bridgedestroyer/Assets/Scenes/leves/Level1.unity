@@ -947,6 +947,10 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7468607997571433443, guid: 3a86ebde8904be446ba3482fbb2f9817, type: 3}
+      propertyPath: _winScreen
+      value: 
+      objectReference: {fileID: 1842513307}
+    - target: {fileID: 7468607997571433443, guid: 3a86ebde8904be446ba3482fbb2f9817, type: 3}
       propertyPath: defeatScreen
       value: 
       objectReference: {fileID: 705761177}
@@ -4058,7 +4062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7034440784998006486, guid: 28092f24c492ee7499f1599d7f80e4bd, type: 3}
       propertyPath: m_Size.y
-      value: 0.69631785
+      value: 0.8288275
       objectReference: {fileID: 0}
     - target: {fileID: 7034440784998006486, guid: 28092f24c492ee7499f1599d7f80e4bd, type: 3}
       propertyPath: m_Size.z
@@ -4070,11 +4074,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7034440784998006486, guid: 28092f24c492ee7499f1599d7f80e4bd, type: 3}
       propertyPath: m_Center.y
-      value: -0.15184143
+      value: -0.085586786
       objectReference: {fileID: 0}
     - target: {fileID: 7034440784998006486, guid: 28092f24c492ee7499f1599d7f80e4bd, type: 3}
       propertyPath: m_Center.z
-      value: 0.36535817
+      value: 0.3653582
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28092f24c492ee7499f1599d7f80e4bd, type: 3}
