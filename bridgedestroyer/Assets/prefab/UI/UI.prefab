@@ -2067,6 +2067,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1795930686982041308, guid: 3261e0505eafbcb4ebbd2204b7341576, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795930686982041308, guid: 3261e0505eafbcb4ebbd2204b7341576, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reload
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795930687618326982, guid: 3261e0505eafbcb4ebbd2204b7341576, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: StartScreen
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3261e0505eafbcb4ebbd2204b7341576, type: 3}
 --- !u!224 &3045214587607962344 stripped
@@ -2294,6 +2306,14 @@ PrefabInstance:
     - target: {fileID: 5306227157393712977, guid: 9fe5518bcfaa3394cb92a9fcdf58acd2, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036437965074229647, guid: 9fe5518bcfaa3394cb92a9fcdf58acd2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036437965074229647, guid: 9fe5518bcfaa3394cb92a9fcdf58acd2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reload
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fe5518bcfaa3394cb92a9fcdf58acd2, type: 3}
