@@ -3,20 +3,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class initialiseGameAnalytics : MonoBehaviour
+public class initialiseGameAnalytics : MonoBehaviour, IGameAnalyticsATTListener
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+        if (Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            GameAnalytics.RequestTrackingAuthorization(this);
+        }
+        else
+        {
+            GameAnalytics.Initialize();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GameAnalyticsATTListenerNotDetermined()
     {
-        
+        GameAnalytics.Initialize();
     }
-    private void Awake()
+    public void GameAnalyticsATTListenerRestricted()
+    {
+        GameAnalytics.Initialize();
+    }
+    public void GameAnalyticsATTListenerDenied()
+    {
+        GameAnalytics.Initialize();
+    }
+    public void GameAnalyticsATTListenerAuthorized()
     {
         GameAnalytics.Initialize();
     }
