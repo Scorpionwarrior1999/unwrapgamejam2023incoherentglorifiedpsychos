@@ -9,22 +9,32 @@ public class Level01Check : MonoBehaviour
     private GameObject _winScreen;
     [SerializeField]
     private GameObject _lossscreen;
+    [SerializeField]
+    private string _string;
+    private bool _hasDoneThing = false;
     void Start()
     {
         GameAnalytics.Initialize();
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "Level01") ;
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, _string) ;
+        
     }
 
     
     void Update()
     {
-        if(_winScreen.active)
+        if (!_hasDoneThing)
         {
-            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "Level01");
-        }
-        else if (_lossscreen.active)
-        {
-            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "Level01");
+
+            if (_winScreen.active)
+            {
+                GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, _string);
+                _hasDoneThing = true;
+            }
+            else if (_lossscreen.active)
+            {
+                GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, _string);
+                _hasDoneThing = true;
+            }
         }
            
     }
